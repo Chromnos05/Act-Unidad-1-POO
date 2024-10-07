@@ -75,4 +75,11 @@ public class Hospital {
     /*CONSTRUCTOR VACIO*/
     public Hospital() {
     }
+    
+    
+    @Override
+    public String toString() {
+        return "Hospital: " + Hospital_Name + "\nUbicacion: " + Hospital_Ubication + "\nNumero de camas: " + Beds_number;
+    }
+    
 }

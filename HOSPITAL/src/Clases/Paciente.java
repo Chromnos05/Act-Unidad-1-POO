@@ -61,7 +61,7 @@ public class Paciente {
     /*FIN DE GETTERS Y SETTERS*/
     
     /*CONSTRUCTOR POR DEFECTO*/
-    public Paciente(Paciente Name, String Age, String Diagnostic, Doctor doctor, Hospital hospital) {
+    public Paciente(String Age, String Diagnostic, String gripe, Doctor doctor, Hospital hospital) {
         this.Name = Name;
         this.Age = Age;
         this.Diagnostic = Diagnostic;
@@ -73,5 +73,8 @@ public class Paciente {
     public Paciente() {
     }
     
-    
+    @Override
+    public String toString() {
+        return "Paciente: " + Name + "\nEdad: " + Age + "\nDiagnostico: " + Diagnostic;
+    }
 }

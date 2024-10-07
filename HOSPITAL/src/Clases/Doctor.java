@@ -75,7 +75,10 @@ public class Doctor {
     public Doctor() {
     }
 
-    
+    @Override
+    public String toString() {
+        return "Doctor en: " + Hospital_Name + " - Ubicacion: " + Hospital_Ubication;
+    }
     
     
 }
